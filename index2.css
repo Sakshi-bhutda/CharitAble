@@ -1,0 +1,265 @@
+/*body{
+	margin: 0;
+	padding: 0;
+	height:100%;
+	width:100%;
+	
+}*/
+body {
+  font-family: Arial;
+  padding: 0px;
+  background: #f1f1f1;
+  margin: 0;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 50px;
+  font-weight:bolder;
+  text-align: center;
+  background: white;
+  background-color: #DEBA9D;
+  margin-bottom: 50px;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 100%;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  padding: 20px;
+}
+
+.project-img1{
+	float:left;
+	width: 50%;
+}
+
+.project-img2{
+	float:left;
+	width:50%;
+}
+
+.project-img3{
+	float: right;
+	width: 40%;
+}
+
+.project-card-header{
+	background-color: #01937C;
+	font-weight: bold;
+	color:#ffffff;
+}
+
+/* Add a card effect for articles */
+.project-card {
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  flex-direction: row;
+  border:0px;
+}
+
+.second-card{
+	flex-direction: row-reverse;
+}
+
+.project-card-body{
+	font-size:1.2rem;
+	margin-top:50px;
+}
+
+.third-card{
+	flex-direction: row;
+}
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.top-container{
+	height: 100%;
+	width: 100%;
+}
+
+.middle-container{
+	margin-top:120px;
+	margin-bottom: 80px;
+}
+
+.about-section{
+	background-image: url("images/bg5.png");
+	background-size: cover;
+	background-attachment: fixed;
+	height:100%;
+	width:100%;
+	/*background-color: #DEBA9D;*/
+	padding:70px;
+}
+
+.about-us{
+	color:#ffffff;
+	font-weight: bolder;
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+.about-card-header{
+	background-color: #DEBA9D;
+	text-align:center;
+	font-family: "Times New Roman", Times, serif;
+}
+
+.about{
+	font-size: 25px;
+	color:#000000;
+	font-family: "Times New Roman", Times, serif; 
+}
+
+
+
+.bg-image{
+	background-image: url("images/bg1.jpg");
+	/*background-color: rgb(39,131,198); */
+	filter: blur(3px);
+  -webkit-filter: blur(3px);
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	height:100%;
+	width:100%;
+	position:absolute;
+	top:0px;
+	z-index: 0;
+ 
+  }
+
+.text{
+	position:relative;
+	z-index: 1;
+}
+
+.nav-item{
+	font-size: 20px;
+    color: #ff6347;
+    
+}
+
+.heading {
+	font-family: "Times New Roman", Times, serif;
+	color: #FFF5EB;
+	/*color: rgb(155,5,5); */
+	/*padding-left: 300px; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 60px;
+	margin-bottom: 20px;
+	font-size: 100px;
+	text-decoration-line: underline;
+	text-decoration-thickness: 2px;
+
+}
+
+span{
+	display: grid;
+	grid-template-columns: 20%,75%,20%;
+
+}
+
+.content{
+	font-weight: bold;
+	font-size: 27px;
+	color: #ffffff;
+	text-align: center;
+	margin: 0px 150px;
+    
+
+}
+
+.butt{
+	padding-top: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.5px;
+
+
+}
+.butt button{
+	font-size: 60px;
+	font-weight: bold;
+	transition: 0.2s;
+	background: none;
+	border-radius: 10px;
+	color: #ff6347;
+	padding: 1px 2px;
+	margin: 220px 20px;
+	background-color: #284E78;
+	margin-bottom:20px;
+
+
+}
+
+.butt a button{
+	text-decoration: none;
+	color: whitesmoke;
+}
+
+.footer-section{
+	background-color: #01937C;
+	padding:50px;
+	margin-top: 50px;
+	text-align: center;
+	font-size: 20px;
+	color:#ffffff;
+}
+
+.social-icon{
+	margin:20px 10px;
+}
+
+@media (max-width: 400px) {
+	body{
+		background-image: url("images/bg2.jpeg");
+		/* background-color: rgb(39,126,197); */
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+		margin: 0;
+		padding: 0;
+
+	}
+}
+
+@media (max-width: 400px) {
+	h1{
+		font-size: 2px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: bold;
+
+	}
+}
+
+@media (min-width: 400px) and (max-width: 650px) {
+	body{
+		background-image: url("images/bg3.jpeg");
+		/*background-color: rgb(39,126,197); */
+	}
+}
